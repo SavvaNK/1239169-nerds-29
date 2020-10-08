@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Savva Kirichenko](https://up.htmlacademy.ru/htmlcss/29/user/1239169).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
