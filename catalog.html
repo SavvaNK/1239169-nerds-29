@@ -5,21 +5,125 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+
     <header class="header">
+      <h1 class="main-title visually-hidden">Магазин готовых шаблонов</h1>
       <nav class="header-nav">
-        <a>
+        <a href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии Нёрдс">
         </a>
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="index.html">Студия</a></li>
-          <li class="site-navigation-item"><a href="">Клиенты</a></li>
-          <li class="site-navigation-item"><a href="">Магазин</a></li>
-          <li class="site-navigation-item"><a href="">Контакты</a></li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="index.html">Студия</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="">Клиенты</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="">Магазин</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-item-link" href="">Контакты</a>
+          </li>
         </ul>
-        <ul class="cart">
-          <li class="cart-item"><a href="">Корзина</a></li>
+        <ul class="header-cart">
+          <li class="header-cart-item"><a href="">Корзина</a></li>
         </ul>
       </nav>
     </header>
+
+    <main>
+
+      <section class="filter">
+        <h2 class="filter-title visually-hidden">Фильтр шаблонов</h2>
+        <!-- filter form -->
+      </section>
+
+      <section class="sort">
+        <h2 class="sort-title">Сортировать:</h2>
+        <ul class="sort-list">
+          <li class="sort-list-item"><a href="">По цене</a></li>
+          <li class="sort-list-item"><a href="">По типу</a></li>
+          <li class="sort-list-item"><a href="">По названию</a></li>
+        </ul>
+        <ul class="sort-orders">
+          <li class="sort-order-descend"><a href=""></a></li>
+          <li class="sort-order-ascend"><a href=""></a></li>
+        </ul>
+      </section>
+
+      <section class="templates">
+        <h2 class="templates-title visually-hidden">Отображение списка шаблонов по заданным параметрам</h2>
+        <ul class="templates-list">
+          <li class="templates-item">
+            <img src="img/img-sedona.jpg" width="358" height="578" alt="Образец сайта Sedona">
+          </li>
+          <li class="templates-item">
+            <img src="img/img-pink.jpg" width="358" height="578" alt="Образец сайта Pink">
+          </li>
+          <li class="templates-item">
+            <img src="img/img-barbershop.jpg" width="358" height="578" alt="Образец сайта Borodinski">
+          </li>
+          <li class="templates-item">
+            <img src="img/img-mishka.jpg" width="358" height="578" alt="Образец сайта Mishka">
+          </li>
+          <li class="templates-item">
+            <img src="img/img-aplus.jpg" width="358" height="578" alt="Образец сайта APlus">
+          </li>
+          <li class="templates-item">
+            <img src="img/img-kvast.jpg" width="358" height="578" alt="Образец сайта Kvast">
+          </li>
+        </ul>
+        
+        <ul class="templates-pagination-list">
+          <li class="templates-pagination-item">
+            <a href="" class="templates-pagination-item-link">1</a>
+          </li>
+          <li class="stemplates-pagination-item">
+            <a href="" class="templates-pagination-item-link">2</a>
+          </li>
+          <li class="templates-pagination-item">
+            <a href="" class="templates-pagination-item-link">3</a>
+          </li>
+          <li class="templates-pagination-item">
+            <a href="" class="templates-pagination-item-link templates-pagination-item-link-next">Следующая</a>
+          </li>
+        </ul>
+
+
+      </section>
+      
+
+      <section class="map">
+        <h2 class="map-title visually-hidden">Наш адрес на карте</h2>
+        <img class="map-map" src="img/map_1.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <div class="map-contacts">
+          <h3 class="map-contacts-title">NЁRDS DESIGN STUDIO</h3>
+          <address class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <p class="map-contacts-tel">тел. <a class="map-contacts-tel-link" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+        </div>
+        <img class="map-marker" src="img/map-marker_1.png" width="231" height="190" alt="маркер на карту с нашим адресом">
+      </section>
+    
+    </main>
+
+    <footer class="footer">
+
+      <section class="social">
+        <h2 class="social-title">Давайте дружить, это выгодно!</h2>
+        <p class="social-offer">Скидка 10% для друзей из социальных сетей</p>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a class="social-list-item-link" href="">В Контакте</a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-item-link" href="">Facebook</a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-item-link" href="">Instagram</a>
+          </li>
+        </ul>
+      </section>
+
   </body>
 </html>
