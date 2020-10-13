@@ -50,6 +50,10 @@
 
 --special-yellow-hover: #EAB534;
 --special-yellow-press:#E5A722;
+
+--special-white-press: rgba(255,255,255,0.7);
+
+--special-box-shadow-press: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 /* Global */
@@ -101,11 +105,10 @@
   background-color: var(--special-red-hover);
 }
 
-/* с этим я ваще не уверен ↓ */
 .btn-red:active {
-  opacity: 0.3;
+  color: var(--special-white-press);
   background-color: var(--special-red-press);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: var(--special-box-shadow-press) ;
 }
 
 .btn-green {
@@ -117,6 +120,13 @@
   background-color: var(--special-green-hover);
 }
 
+.btn-green:active {
+  color: var(--special-white-press);
+  background-color: var(--special-green-press);
+  box-shadow: var(--special-box-shadow-press) ;
+}
+
+
 .btn-yellow {
   background-color: var(--basic-yellow);
 }
@@ -124,6 +134,12 @@
 .btn-yellow:hover,
 .btn-yellow:focus {
   background-color: var(--special-yellow-hover);
+}
+
+.btn-yellow:active {
+  color: var(--special-white-press);
+  background-color: var(--special-yellow-press);
+  box-shadow: var(--special-box-shadow-press) ;
 }
 
 /* Header */
