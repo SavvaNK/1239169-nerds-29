@@ -101,6 +101,13 @@
   background-color: var(--special-red-hover);
 }
 
+/* с этим я ваще не уверен ↓ */
+.btn-red:active {
+  opacity: 0.3;
+  background-color: var(--special-red-press);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
 .btn-green {
   background-color: var(--basic-green);
 }
@@ -141,8 +148,9 @@
   color: var(--basic-red);
 }
 
-/* .site-navigation-current a:not([href]) {
-  /* сделать подчёркивание красным */
+/* .site-navigation-current a:not([href]),
+  .cart-current a:not([href]) {
+  /* сделать подчёркивание красным, есть идея но это не точно*/
   /* https://stackoverflow.com/questions/11676962/anotanothref-selector */
 /* } */
 
