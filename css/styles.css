@@ -1,5 +1,4 @@
 /* Fonts */
-
 /* roboto-500 - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
@@ -44,9 +43,12 @@
 :root {
   /* Basic */
   --basic-black: #000000;
+  --basic-black-lighter: #283136;
   --basic-red: #FB565A;
   --basic-green: #00CA74;
   --basic-grey: #EEEEEE;
+  --basic-gray-dark: #666666;
+  --basic-grey-darker: #444444;
   --basic-yellow: #EFC84A;
   --basic-white: #ffffff;
 
@@ -54,9 +56,13 @@
 --special-red-hover: #E74246;
 --special-red-invalid: #E74246;
 --special-red-press: #D7373B;
---special-green-hover: ##00BC6C;
---special-green-press: ##00AA62;
---special-grey-darker: #444444;
+
+--special-green-hover: #00BC6C;
+--special-green-press: #00AA62;
+
+--special-yellow-hover: #EAB534;
+--special-yellow-press:#E5A722;
+
 }
 
 /* Global */
@@ -68,6 +74,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  letter-spacing: 0px;
   line-height: 24px;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -82,6 +89,49 @@
   height: auto;
 }
 
+.page ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  height: 50px;
+  border-radius: 3px;
+}
+
+.btn-red {
+  background-color: var(--basic-red);
+}
+
+.btn-red:hover,
+.btn-red:focus {
+  background-color: var(--special-red-hover);
+}
+
+.btn-green {
+  background-color: var(--basic-green);
+}
+
+.btn-green:hover,
+.btn-green:focus {
+  background-color: var(--special-green-hover);
+}
+
+.btn-yellow {
+  background-color: var(--basic-yellow);
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+  background-color: var(--special-yellow-hover);
+}
+
 /* Header */
 .main-header {
   background-color: var(--basic-grey);
@@ -91,11 +141,6 @@
 }
 
 /* Header Navigation */
-.site-navigation,
-.cart {
-  list-style: none;
-}
-
 .site-navigation-item-link,
 .cart-item-link {
   color: var(--basic-black);
@@ -126,10 +171,81 @@
   line-height: 55px;
 }
 
-.slider-item-button {
-  font-weight: 500;
-  line-height: 18px;
-  color: var(--basic-white);
-  background-color: var(--basic-red);
+.slider-item-text {
+  color: var(--basic-black-lighter);
 }
 
+.slider-item-button {
+  width: 240px;
+}
+
+/* Main Products */
+.products-list-item-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.products-list-item-text {
+  color: var(--basic-black-lighter);
+}
+
+.products-list-item-button {
+  width: 160px;
+}
+
+/* Main About */
+.about-slogan {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-credo {
+  color: var(--basic-black-lighter);
+}
+
+.about-offers-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black-lighter);
+}
+
+.about-offers-list-item {
+  color: var(--basic-black-lighter);
+}
+
+.about-tradition {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-terms-item-repcent {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.about-terms-item-text {
+  line-height: 18px;
+  color: var(--basic-black-lighter);
+}
+
+/* Main Clients */
+
+/* Main Map */
+.map-contacts-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.map-contacts-address,
+.map-contacts-tel,
+.map-contacts-tel-link {
+  line-height: 18px;
+  color: var(--basic-gray-dark);
+}
