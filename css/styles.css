@@ -1,0 +1,135 @@
+/* Fonts */
+
+/* roboto-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v20-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v20-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin_cyrillic-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v20-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin_cyrillic-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* Variables */
+:root {
+  /* Basic */
+  --basic-black: #000000;
+  --basic-red: #FB565A;
+  --basic-green: #00CA74;
+  --basic-grey: #EEEEEE;
+  --basic-yellow: #EFC84A;
+  --basic-white: #ffffff;
+
+/* Special */
+--special-red-hover: #E74246;
+--special-red-invalid: #E74246;
+--special-red-press: #D7373B;
+--special-green-hover: ##00BC6C;
+--special-green-press: ##00AA62;
+--special-grey-darker: #444444;
+}
+
+/* Global */
+.page-body {
+  margin: 0;
+  padding: 0;
+  min-width: 1160px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+.main-header {
+  background-color: var(--basic-grey);
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/* Header Navigation */
+.site-navigation,
+.cart {
+  list-style: none;
+}
+
+.site-navigation-item-link,
+.cart-item-link {
+  color: var(--basic-black);
+
+}
+
+.site-navigation-item-link:hover,
+.cart-item-link:hover,
+.site-navigation-item-link:focus,
+.cart-item-link:focus {
+  color: var(--basic-red);
+}
+
+.site-navigation-current a:not([href]) {
+  /* сделать подчёркивание красным */
+  /* https://stackoverflow.com/questions/11676962/anotanothref-selector */
+}
+
+/* Main */
+/* Main Slider */
+.slider {
+  background-color: var(--basic-grey);
+}
+
+.slider-item-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-item-button {
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
