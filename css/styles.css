@@ -51,7 +51,8 @@
 --special-yellow-hover: #EAB534;
 --special-yellow-press:#E5A722;
 
---special-white-press: rgba(255,255,255,0.7);
+--special-white-press: rgba(255,255,255,0.3);
+--special-black-press: rgba(0,0,0,0.3);
 
 --special-box-shadow-press: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
@@ -162,6 +163,11 @@
 .site-navigation-item-link:focus,
 .cart-item-link:focus {
   color: var(--basic-red);
+}
+
+.site-navigation-item-link:active,
+.cart-item-link:active {
+  color: var(--special-black-press);
 }
 
 /* .site-navigation-current a:not([href]),
