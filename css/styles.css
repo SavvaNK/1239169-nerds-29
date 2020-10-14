@@ -282,3 +282,11 @@
   line-height: 22px;
   color: var(--basic-grey-darker);
 }
+
+/* catalog.html */
+.main-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-transform: none;
+}
