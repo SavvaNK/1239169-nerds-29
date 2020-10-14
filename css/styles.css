@@ -57,6 +57,7 @@
 
 --special-white-press: rgba(255,255,255,0.3);
 --special-black-press: rgba(0,0,0,0.3);
+--special-white-background-grey-btn-cur: rgba(0, 0, 0, 0.0001);
 
 --special-box-shadow-press: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
@@ -154,12 +155,12 @@
 
 .btn-grey:hover,
 .btn-grey:focus {
-  background-color: var(--special-yellow-hover);
+  background-color: var(--special-grey-hover);
 }
 
 .btn-grey:active {
-  color: var(--special-white-press);
-  background-color: var(--special-yellow-press);
+  color: var(--special-black-press);
+  background-color: var(--special-grey-press);
   box-shadow: var(--special-box-shadow-press) ;
 }
 
@@ -368,3 +369,16 @@
   width: 200px;
 }
 
+.templates-pagination-item-btn {
+  width: 50px;
+}
+
+.templates-pagination-item-btn-cur {
+  background-color: var(--special-white-background-grey-btn-cur);
+  border: 3px solid var(--special-grey-btn-cur-border);
+  box-sizing: border-box;
+}
+
+.templates-pagination-item-btn-next {
+  width: 260px;
+}
