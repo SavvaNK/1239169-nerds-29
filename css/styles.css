@@ -51,6 +51,10 @@
 --special-yellow-hover: #EAB534;
 --special-yellow-press:#E5A722;
 
+--special-grey-hover: #DFDFDF;
+--special-grey-press:#D5D5D5;
+--special-grey-btn-cur-border: #DBDBDB;
+
 --special-white-press: rgba(255,255,255,0.3);
 --special-black-press: rgba(0,0,0,0.3);
 
@@ -142,6 +146,23 @@
   background-color: var(--special-yellow-press);
   box-shadow: var(--special-box-shadow-press) ;
 }
+
+.btn-grey {
+  color: var(--basic-black);
+  background-color: var(--basic-grey);
+}
+
+.btn-grey:hover,
+.btn-grey:focus {
+  background-color: var(--special-yellow-hover);
+}
+
+.btn-grey:active {
+  color: var(--special-white-press);
+  background-color: var(--special-yellow-press);
+  box-shadow: var(--special-box-shadow-press) ;
+}
+
 
 /* Header */
 .main-header {
@@ -290,3 +311,60 @@
   line-height: 55px;
   text-transform: none;
 }
+
+/* catalog.html Sort */
+.sort {
+  text-transform: uppercase;
+}
+
+.sort-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.sort-list-item-link {
+  font-size: 14px;
+  line-height: 18px;
+  color: inherit;
+  opacity: 0.3;
+}
+
+.sort-list-item-link:focus,
+.sort-list-item-link:hover {
+  opacity: 0.6;
+}
+
+.sort-list-item-link-cur,
+.sort-list-item-link:active {
+  opacity: 1;
+}
+
+/* catalog.html templates */
+
+.templates-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.templates-item-title:hover,
+.templates-item-title:focus {
+  color: var(--basic-red);
+}
+
+.templates-item-title:active {
+  color: var(--special-black-press);
+
+}
+
+.templates-item-desc {
+  line-height: 18px;
+  color: var(--basic-gray-dark);
+}
+
+.templates-item-button {
+  width: 200px;
+}
+
