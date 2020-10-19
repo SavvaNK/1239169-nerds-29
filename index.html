@@ -8,59 +8,64 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="page-body">
-
-    <header class="main-header">
-      <h1 class="main-title visually-hidden">Веб-дизайн студия «Нёрдс»</h1>
-      <nav class="main-nav">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item">
-            <a class="site-navigation-item-link" href="#">Студия</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-item-link" href="#">Клиенты</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-item-link" href="catalog.html">Магазин</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-item-link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="cart">
-          <li class="cart-item"><a class="cart-item-link" href="#">Корзина</a></li>
-        </ul>
-      </nav>
-    </header>
+    
+    <div class="main-header-wrap">
+      <header class="main-header">
+        <h1 class="main-title visually-hidden">Веб-дизайн студия «Нёрдс»</h1>
+        <nav class="main-nav">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation-item">
+              <a class="site-navigation-item-link" href="#">Студия</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-item-link" href="#">Клиенты</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-item-link" href="catalog.html">Магазин</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="cart">
+            <li class="cart-item"><a class="cart-item-link" href="#">Корзина</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
     <main class="container">
-      <section class="slider">
-        <h2 class="slider-title visually-hidden">Наши преимущества</h2>
-        <ul class="slider-list">
-          <li class="slider-item">
-            <h3 class="slider-item-title">Долго, дорого, скрупулезно.</h3>
-            <p class="slider-item-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="slider-item-button btn btn-red">Узнать больше</a>
-            <img class="slider-item-img" src="img/nerds-index-slide1_1.png" alt="три кирпича" width="760" height="431" >
-          </li>
-          <li class="slider-item">
-            <h3 class="slider-item-title">Любим математику как никто другой</h3>
-            <p class="slider-item-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-            <a href="#" class="slider-item-button btn btn-red">Узнать больше</a>
-            <img class="slider-item-img" src="img/nerds-index-slide2_1.png" alt="" width="760" height="431" alt="два недоПК">
-          </li>
-          <li class="slider-item">
-            <h3 class="slider-item-title">Только ночь, только хардкор</h3>
-            <p class="slider-item-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#" class="slider-item-button btn btn-red">Узнать больше</a>
-            <img class="slider-item-img" src="img/nerds-index-slide3_1.png" alt="" width="760" height="431" alt="кирпич и доска разделочная">
-          </li>
-        </ul>
 
-        <!-- radio buttons for slider -->
-      </section>
+      <div class="slider-wrap">
+        <section class="slider">
+          <h2 class="slider-title visually-hidden">Наши преимущества</h2>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3 class="slider-item-title">Долго, дорого, скрупулезно.</h3>
+              <p class="slider-item-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a href="#" class="slider-item-button btn btn-red">Узнать больше</a>
+              <img class="slider-item-img" src="img/nerds-index-slide1_1.png" alt="три кирпича" width="760" height="431" >
+            </li>
+            <li class="slider-item">
+              <h3 class="slider-item-title">Любим математику как никто другой</h3>
+              <p class="slider-item-text">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+              <a href="#" class="slider-item-button btn btn-red">Узнать больше</a>
+              <img class="slider-item-img" src="img/nerds-index-slide2_1.png" alt="" width="760" height="431" alt="два недоПК">
+            </li>
+            <li class="slider-item">
+              <h3 class="slider-item-title">Только ночь, только хардкор</h3>
+              <p class="slider-item-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a href="#" class="slider-item-button btn btn-red">Узнать больше</a>
+              <img class="slider-item-img" src="img/nerds-index-slide3_1.png" alt="" width="760" height="431" alt="кирпич и доска разделочная">
+            </li>
+          </ul>
+
+          <!-- radio buttons for slider -->
+        </section>
+      </div>
 
       <section class="products">
         <h2 class="products-title visually-hidden">Продукты веб-дизайн студии</h2>
@@ -87,31 +92,35 @@
       </section>
 
       <section class="about">
-        <h2 class="about-title visually-hidden">О нас</h2>
-        <p class="about-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p class="about-credo">Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3 class="about-offers-title">Выполняем заказы на разработку:</h3>
-        <ul class="about-offers-list">
-          <li class="about-offers-list-item">Веб-сайтов любой сложности</li>
-          <li class="about-offers-list-item">Мобильных приложений для iOS и Android</li>
-          <li class="about-offers-list-item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-        <img class="about-logo" src="img/nerds-illustration_1.png" width="360" height="208" alt="Логотип студии Нёрдс в праздничном оформлении">
-        <p class="about-tradition">с 2004 года Любим точность во всем:</p>
-        <ul class="about-terms">
-          <li class="about-terms-item">
-            <p class="about-terms-item-repcent">146<sup>%</sup></p>
-            <p class="about-terms-item-text">Уровень самоотдачи</p>
-          </li>
-          <li class="about-terms-item">
-            <p class="about-terms-item-repcent">100<sup>%</sup></p>
-            <p class="about-terms-item-text">Соблюдение сроков</p>
-          </li>
-          <li class="about-terms-item">
-            <p class="about-terms-item-repcent">50<sup>%</sup></p>
-            <p class="about-terms-item-text">Минимальная предоплата</p>
-          </li>
-        </ul>
+        <div class="about-left-container">
+          <h2 class="about-title visually-hidden">О нас</h2>
+          <p class="about-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="about-credo">Исповедуем принципы минимализма и чистоты. Ставим математический расчетпревыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3 class="about-offers-title">Выполняем заказы на разработку:</h3>
+          <ul class="about-offers-list">
+            <li class="about-offers-list-item">Веб-сайтов любой сложности</li>
+            <li class="about-offers-list-item">Мобильных приложений для iOS и Android</li>
+            <li class="about-offers-list-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about-right-container">
+          <img class="about-logo" src="img/nerds-illustration_1.png" width="360" height="208" alt="Логотип студии Нёрдс в праздничном оформлении">
+          <p class="about-tradition">с 2004 года Любим точность во всем:</p>
+          <ul class="about-terms">
+            <li class="about-terms-item">
+              <p class="about-terms-item-repcent">146<sup>%</sup></p>
+              <p class="about-terms-item-text">Уровень самоотдачи</p>
+            </li>
+            <li class="about-terms-item">
+              <p class="about-terms-item-repcent">100<sup>%</sup></p>
+              <p class="about-terms-item-text">Соблюдение сроков</p>
+            </li>
+            <li class="about-terms-item">
+              <p class="about-terms-item-repcent">50<sup>%</sup></p>
+              <p class="about-terms-item-text">Минимальная предоплата</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="clients">
@@ -157,19 +166,23 @@
     <footer class="main-footer">
 
       <section class="social">
-        <h2 class="social-title">Давайте дружить, это выгодно!</h2>
-        <p class="social-offer">Скидка 10% для друзей из социальных сетей</p>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a class="social-list-item-link" href="#">В Контакте</a>
-          </li>
-          <li class="social-list-item">
-            <a class="social-list-item-link" href="#">Facebook</a>
-          </li>
-          <li class="social-list-item">
-            <a class="social-list-item-link" href="#">Instagram</a>
-          </li>
-        </ul>
+        <div class="social-right-container">
+          <h2 class="social-title">Давайте дружить, это выгодно!</h2>
+          <p class="social-offer">Скидка 10% для друзей из социальных сетей</p>
+        </div>
+        <div class="social-left-container">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="social-list-item-link" href="#">В Контакте</a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-item-link" href="#">Facebook</a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-item-link" href="#">Instagram</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
     </footer>
