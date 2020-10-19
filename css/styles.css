@@ -180,8 +180,6 @@
   margin: 0 auto;
   background-color: var(--basic-grey);
   display: grid;
-  outline: 5px solid rgb(0, 0, 0);
-  outline-offset: -5px;
 }
 
 .main-header {
@@ -192,8 +190,6 @@
   display: grid;
   justify-self: center;
   width: 1160px;
-  outline: 5px solid rgba(255, 0, 157, 0.7);
-  outline-offset: -5px;
 }
 
 /* Header Navigation */
@@ -231,8 +227,6 @@
 .container {
   width: 1160px;
   display: grid;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .slider-wrap {
@@ -240,16 +234,12 @@
   /* margin: 0 auto; */
   background-color: var(--basic-grey);
   display: grid;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .slider {
   width: 1160px;
   background-color: var(--basic-grey);
   justify-self: center;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .slider-item-title {
@@ -270,8 +260,6 @@
 .products {
   justify-self: center;
   width: 1160px;
-  outline: 5px solid rgba(200, 100, 100, 0.7);
-  outline-offset: -5px;
 }
 
 .products-list {
@@ -302,8 +290,6 @@
   display: grid;
   justify-self: center;
   width: 1160px;
-  outline: 5px solid rgba(200, 200, 100, 0.7);
-  outline-offset: -5px;
   grid-template-columns: 1fr 360px;
 }
 
@@ -353,14 +339,10 @@
   display: grid;
   justify-self: center;
   width: 1160px;
-  outline: 5px solid rgba(200, 100, 100, 0.7);
-  outline-offset: -5px;
 }
 
 .clients-list {
   display: grid;
-  outline: 5px solid rgba(23, 245, 3, 0.7);
-  outline-offset: -5px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
 }
@@ -370,8 +352,6 @@
   display: grid;
   justify-self: center;
   width: 1160px;
-  outline: 5px solid rgba(27, 204, 103, 0.7);
-  outline-offset: -5px;
 }
 
 .map-contacts-title {
@@ -397,14 +377,10 @@
   display: grid;
   justify-self: center;
   width: 1160px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
 }
 
 .social {
   display: grid;
-  outline: 5px solid rgba(55, 0, 255, 0.7);
-  outline-offset: -5px;
   grid-template-columns: 300px auto;
 }
 
