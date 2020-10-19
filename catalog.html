@@ -9,138 +9,148 @@
   </head>
   <body class="page-body">
 
-    <header class="main-header">
-      <h1 class="main-title">Магазин готовых шаблонов</h1>
-      <nav class="header-nav">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item">
-            <a class="site-navigation-item-link" href="index.html">Студия</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-item-link" href="#">Клиенты</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-item-link" href="#">Магазин</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-item-link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <ul class="cart">
-          <li class="cart-item"><a class="cart-item-link" href="#">Корзина</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="main-header-wrap">
+      <header class="main-header">
+        <h1 class="main-title">Магазин готовых шаблонов</h1>
+        <nav class="main-nav">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип студии Нёрдс">
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation-item">
+              <a class="site-navigation-item-link" href="index.html">Студия</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-item-link" href="#">Клиенты</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-item-link" href="#">Магазин</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-item-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="cart">
+            <li class="cart-item"><a class="cart-item-link" href="#">Корзина</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
-    <main class="container">
+    <main class="catalog-main-container">
+      <div class="catalog-main-container-left">
+        <section class="filter">
+          <h2 class="filter-title visually-hidden">Фильтр шаблонов</h2>
+          <!-- filter form -->
+        </section>
+      </div>
 
-      <section class="filter">
-        <h2 class="filter-title visually-hidden">Фильтр шаблонов</h2>
-        <!-- filter form -->
-      </section>
+      <div class="catalog-main-container-right">
+        <section class="sort">
+          <h2 class="sort-title">Сортировать:</h2>
+          <ul class="sort-list">
+            <li class="sort-list-item"><a class="sort-list-item-link sort-list-item-link-cur" href="#">По цене</a></li>
+            <li class="sort-list-item"><a class="sort-list-item-link" href="#">По типу</a></li>
+            <li class="sort-list-item"><a class="sort-list-item-link" href="#">По названию</a></li>
+          </ul>
+          <ul class="sort-orders">
+            <li class="sort-order-descend"><a class="class="sort-order-descend-link" href="#"></a></li>
+            <li class="sort-order-ascend"><a class="class="sort-order-descend-link" href="#"></a></li>
+          </ul>
+        </section>
 
-      <section class="sort">
-        <h2 class="sort-title">Сортировать:</h2>
-        <ul class="sort-list">
-          <li class="sort-list-item"><a class="sort-list-item-link sort-list-item-link-cur" href="#">По цене</a></li>
-          <li class="sort-list-item"><a class="sort-list-item-link" href="#">По типу</a></li>
-          <li class="sort-list-item"><a class="sort-list-item-link" href="#">По названию</a></li>
-        </ul>
-        <ul class="sort-orders">
-          <li class="sort-order-descend"><a class="class="sort-order-descend-link" href="#"></a></li>
-          <li class="sort-order-ascend"><a class="class="sort-order-descend-link" href="#"></a></li>
-        </ul>
-      </section>
+        <section class="templates">
+          <h2 class="templates-title visually-hidden">Отображение списка шаблонов по заданным параметрам</h2>
+          <ul class="templates-list">
+            <li class="templates-item">
+              <img class="templates-item-img" src="img/img-sedona.jpg" width="358" height="578" alt="Образец сайта Sedona">
+              <h3 class="templates-item-title">Sedona</h3>
+              <p class="templates-item-desc">Информационный сайт для туристов</p>
+              <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
+            </li>
+            <li class="templates-item">
+              <img class="templates-item-img" src="img/img-pink.jpg" width="358" height="578" alt="Образец сайта Pink">
+              <h3 class="templates-item-title">Pink App</h3>
+              <p class="templates-item-desc">Продуктовый лендинг приложения для iOS и Android</p>
+              <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
+            </li>
+            <li class="templates-item">
+              <img class="templates-item-img" src="img/img-barbershop.jpg" width="358" height="578" alt="Образец сайта Borodinski">
+              <h3 class="templates-item-title">Barbershop</h3>
+              <p class="templates-item-desc">Сайт салона красоты. Для мужчин, да.</p>
+              <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
+            </li>
+            <li class="templates-item">
+              <img class="templates-item-img" src="img/img-mishka.jpg" width="358" height="578" alt="Образец сайта Mishka">
+              <h3 class="templates-item-title">MISHKA</h3>
+              <p class="templates-item-desc">Интернет-магазин вязаных игрушек</p>
+              <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
+            </li>
+            <li class="templates-item">
+              <img class="templates-item-img" src="img/img-aplus.jpg" width="358" height="578" alt="Образец сайта A Plus">
+              <h3 class="templates-item-title">A Plus</h3>
+              <p class="templates-item-desc">Лендинг курсов повышения квалификации</p>
+              <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
+            </li>
+            <li class="templates-item">
+              <img class="templates-item-img" src="img/img-kvast.jpg" width="358" height="578" alt="Образец сайта Kvast">
+              <h3 class="templates-item-title">КВАСТ</h3>
+              <p class="templates-item-desc">Промо-сайт производителя крафтового кваса</p>
+              <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
+            </li>
+          </ul>
+          
+          <ul class="templates-pagination-list">
+            <li class="templates-pagination-item">
+              <a href="#" class="templates-pagination-item-btn templates-pagination-item-btn-cur btn btn-grey">1</a>
+            </li>
+            <li class="stemplates-pagination-item">
+              <a href="#" class="templates-pagination-item-btn btn btn-grey">2</a>
+            </li>
+            <li class="templates-pagination-item">
+              <a href="#" class="templates-pagination-item-btn btn btn-grey">3</a>
+            </li>
+            <li class="templates-pagination-item">
+              <a href="#" class="templates-pagination-item-btn-next btn btn-grey">Следующая</a>
+            </li>
+          </ul>
+        </section>
+      </div>
 
-      <section class="templates">
-        <h2 class="templates-title visually-hidden">Отображение списка шаблонов по заданным параметрам</h2>
-        <ul class="templates-list">
-          <li class="templates-item">
-            <img class="templates-item-img" src="img/img-sedona.jpg" width="358" height="578" alt="Образец сайта Sedona">
-            <h3 class="templates-item-title">Sedona</h3>
-            <p class="templates-item-desc">Информационный сайт для туристов</p>
-            <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
-          </li>
-          <li class="templates-item">
-            <img class="templates-item-img" src="img/img-pink.jpg" width="358" height="578" alt="Образец сайта Pink">
-            <h3 class="templates-item-title">Pink App</h3>
-            <p class="templates-item-desc">Продуктовый лендинг приложения для iOS и Android</p>
-            <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
-          </li>
-          <li class="templates-item">
-            <img class="templates-item-img" src="img/img-barbershop.jpg" width="358" height="578" alt="Образец сайта Borodinski">
-            <h3 class="templates-item-title">Barbershop</h3>
-            <p class="templates-item-desc">Сайт салона красоты. Для мужчин, да.</p>
-            <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
-          </li>
-          <li class="templates-item">
-            <img class="templates-item-img" src="img/img-mishka.jpg" width="358" height="578" alt="Образец сайта Mishka">
-            <h3 class="templates-item-title">MISHKA</h3>
-            <p class="templates-item-desc">Интернет-магазин вязаных игрушек</p>
-            <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
-          </li>
-          <li class="templates-item">
-            <img class="templates-item-img" src="img/img-aplus.jpg" width="358" height="578" alt="Образец сайта A Plus">
-            <h3 class="templates-item-title">A Plus</h3>
-            <p class="templates-item-desc">Лендинг курсов повышения квалификации</p>
-            <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
-          </li>
-          <li class="templates-item">
-            <img class="templates-item-img" src="img/img-kvast.jpg" width="358" height="578" alt="Образец сайта Kvast">
-            <h3 class="templates-item-title">КВАСТ</h3>
-            <p class="templates-item-desc">Промо-сайт производителя крафтового кваса</p>
-            <a href="#" class="templates-item-button btn btn-red">9 900 ₽</a>
-          </li>
-        </ul>
-        
-        <ul class="templates-pagination-list">
-          <li class="templates-pagination-item">
-            <a href="#" class="templates-pagination-item-btn templates-pagination-item-btn-cur btn btn-grey">1</a>
-          </li>
-          <li class="stemplates-pagination-item">
-            <a href="#" class="templates-pagination-item-btn btn btn-grey">2</a>
-          </li>
-          <li class="templates-pagination-item">
-            <a href="#" class="templates-pagination-item-btn btn btn-grey">3</a>
-          </li>
-          <li class="templates-pagination-item">
-            <a href="#" class="templates-pagination-item-btn-next btn btn-grey">Следующая</a>
-          </li>
-        </ul>
-      </section>
-
-      <section class="map">
+      <section class="catalog-map">
         <h2 class="map-title visually-hidden">Наш адрес на карте</h2>
         <img class="map-map" src="img/map_1.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <div class="map-contacts">
           <h3 class="map-contacts-title">NЁRDS DESIGN STUDIO</h3>
           <address class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <p class="map-contacts-tel">тел. <a class="map-contacts-tel-link" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a class="map-contacts-button btn btn-red" href="#">Напишите нам</a>
         </div>
         <img class="map-marker" src="img/map-marker_1.png" width="231" height="190" alt="маркер на карту с нашим адресом">
       </section>
     
     </main>
 
-    <footer class="footer">
+    <footer class="main-footer">
 
       <section class="social">
-        <h2 class="social-title">Давайте дружить, это выгодно!</h2>
-        <p class="social-offer">Скидка 10% для друзей из социальных сетей</p>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a class="social-list-item-link" href="#">В Контакте</a>
-          </li>
-          <li class="social-list-item">
-            <a class="social-list-item-link" href="#">Facebook</a>
-          </li>
-          <li class="social-list-item">
-            <a class="social-list-item-link" href="#">Instagram</a>
-          </li>
-        </ul>
+        <div class="social-right-container">
+          <h2 class="social-title">Давайте дружить, это выгодно!</h2>
+          <p class="social-offer">Скидка 10% для друзей из социальных сетей</p>
+        </div>
+        <div class="social-left-container">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="social-list-item-link" href="#">В Контакте</a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-item-link" href="#">Facebook</a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-item-link" href="#">Instagram</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
   </body>
