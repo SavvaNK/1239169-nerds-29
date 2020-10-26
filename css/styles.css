@@ -213,7 +213,7 @@ input[type="radio"].visually-hidden {
   min-height: 114px;
   display: grid;
   justify-content: center;
-  grid-template-columns: 160px 1fr 75px;
+  grid-template-columns: 160px 1fr auto;
   align-items: end;
   /* outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px; */
@@ -227,6 +227,22 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   /* outline: 5px solid rgba(217, 255, 0, 0.7);
   outline-offset: -5px; */
+}
+
+.site-navigation-item,
+.cart-item {
+  display: block;
+  box-sizing: border-box;
+}
+
+.cart-item-link {
+  padding-left: 30px;
+}
+
+.site-navigation-item-cur,
+.cart-item-cur {
+  border-bottom: 2px solid var(--basic-red);
+
 }
 
 .site-navigation-item-link,
@@ -247,25 +263,21 @@ input[type="radio"].visually-hidden {
   color: var(--special-black-press);
 }
 
-/* .cart-item-link::before {
+.cart-item {
+  position: relative;
+}
+
+.cart-item-link::before {
   content: "";
   position: absolute;
-  top: 27px;
-  left: 24px;
+  top: 8px;
+  left: 0px;
   width: 15px;
   height: 15px;
   background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.3;
-} */
-
-
-/* .site-navigation-current a:not([href]),
-  .cart-current a:not([href]) {
-  /* сделать подчёркивание красным, есть идея но это не точно*/
-  /* https://stackoverflow.com/questions/11676962/anotanothref-selector */
-/* } */
+}
 
 /* Main */
 /* Main Slider */
