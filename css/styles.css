@@ -296,6 +296,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
+  position: relative;
   width: 1160px;
   padding: 0 20px;
   background-color: var(--basic-grey);
@@ -332,6 +333,34 @@ input[type="radio"].visually-hidden {
   grid-column: 2 / 3;
 }
 
+.slider-controls {
+  position: absolute;
+  bottom: 100px;
+  left: 600px;
+  z-index: 20;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+}
+
+.slider-controls-button {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  padding: 0;
+  /* background-color: transparent; */
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls-button-cur {
+  background-image: url(../img/slider-controls-button-cur.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 /* Main Products */
 .products {
   justify-self: center;
