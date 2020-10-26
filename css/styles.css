@@ -298,6 +298,7 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
   width: 1160px;
+  height: 431;
   padding: 0 20px;
   background-color: var(--basic-grey);
   justify-self: center;
@@ -350,17 +351,26 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-white);
   border-radius: 50%;
   padding: 0;
-  /* background-color: transparent; */
-
+  border: none;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .slider-controls-button-cur {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
   background-image: url(../img/slider-controls-button-cur.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
 /* Main Products */
 .products {
   justify-self: center;
