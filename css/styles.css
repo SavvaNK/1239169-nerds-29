@@ -54,6 +54,7 @@
 --special-grey-hover: #DFDFDF;
 --special-grey-press:#D5D5D5;
 --special-grey-btn-cur-border: #DBDBDB;
+--special-grey-logo-press: #A6A6A6;
 
 --special-white-press: rgba(255,255,255,0.3);
 --special-black-press: rgba(0,0,0,0.3);
@@ -539,7 +540,8 @@ input[type="radio"].visually-hidden {
 }
 
 /* Main Map */
-.map {
+.map,
+.catalog-map {
   display: grid;
   justify-self: center;
   width: 1160px;
@@ -641,6 +643,17 @@ input[type="radio"].visually-hidden {
 }
 
 /* catalog.html */
+.catalog-header-logo-img,
+.catalog-header-logo-img:hover,
+.catalog-header-logo-img:focus {
+  cursor: pointer;
+}
+
+.catalog-header-logo-img:active {
+  opacity: 0.303;
+  cursor: pointer;
+}
+
 .main-title {
   order: 1;
   font-weight: 500;
