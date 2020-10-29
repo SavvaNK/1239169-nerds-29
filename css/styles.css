@@ -54,17 +54,20 @@
 --special-grey-hover: #DFDFDF;
 --special-grey-press:#D5D5D5;
 --special-grey-btn-cur-border: #DBDBDB;
---special-grey-logo-press: #A6A6A6;
 
 --special-white-press: rgba(255,255,255,0.3);
 --special-black-press: rgba(0,0,0,0.3);
 --special-white-background-grey-btn-cur: rgba(0, 0, 0, 0.0001);
 
 --special-box-shadow-press: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+--special-box-shadow-filter-toggle: 0px 2px 1px rgba(0, 0, 0, 0.15);
 
 --special-social-background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
 --special-social-background-hover: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
 --special-social-background-active: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+
+--special-grey-scale: #D7DCDF;
+--special-grey-filter-toggle-background: #ABABAB;
 }
 
 /* Global */
@@ -674,6 +677,95 @@ input[type="radio"].visually-hidden {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto 1fr auto;
+}
+
+/* catalog.html Filter */
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  /* Для демонстрации */
+  width: 260px;
+  margin: 50px auto; 
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--basic-grey);
+  border-radius: 3px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--special-grey-scale);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--special-grey-filter-toggle-background);
+  border-radius: 50%;
+  box-shadow: var(--special-box-shadow-filter-toggle);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: var(--basic-black-lighter);
+  border: none;
+  border-radius: 3px;
+  background: var(--basic-grey);
+  font-family: inherit;
+  font-size: inherit;
 }
 
 /* catalog.html Sort */
