@@ -772,17 +772,21 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.filter-grid-input + label {
+.filter-grid-input + label,
+.filter-features-input + label {
   line-height: 20px;
   color: var(--basic-black-lighter);
 }
 
 .filter-grid-input + label:focus,
-.filter-grid-input + label:hover {
+.filter-grid-input + label:hover,
+.filter-features-input + label:focus,
+.filter-features-input + label:hover {
   cursor: pointer;
 }
 
-.filter-grid-input:disabled + label {
+.filter-grid-input:disabled + label,
+.filter-features-input:disabled + label {
   opacity: 0.3;
 }
 
@@ -818,15 +822,46 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
+.filter-features-input + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -1px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-features-input:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: -1px;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
 .filter-grid-input:checked:hover + label::before,
 .filter-grid-input:checked:focus + label::before,
 .filter-grid-input:hover + label::before,
-.filter-grid-input:focus + label::before {
+.filter-grid-input:focus + label::before,
+.filter-features-input:checked:hover + label::before,
+.filter-features-input:checked:focus + label::before,
+.filter-features-input:hover + label::before,
+.filter-features-input:focus + label::before {
   opacity: 1;
   cursor: pointer;
 }
 
-.filter-grid-input:disabled + label::before {
+.filter-grid-input:disabled + label::before
+.filter-features-input:disabled + label::before {
   opacity: 0.1;
 }
 

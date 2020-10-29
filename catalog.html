@@ -68,23 +68,46 @@
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option filter-grid">
-                  <input class="visually-hidden filter-grid-input" type="radio" name="grid" value="adaptive-grid" id="filter-grid-adaptive" checked>
-                  <label class="filter-grid-input-label" for="filter-grid-adaptive">Адаптивная</label>
+                  <input class="visually-hidden filter-grid-input" type="radio" name="grid" value="adaptive" id="filter-grid-adaptive" checked>
+                  <label class="filter-grid-label" for="filter-grid-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option filter-grid">
-                  <input class="visually-hidden filter-grid-input" type="radio" name="grid" value="fixed-grid" id="filter-grid-fixed">
-                  <label class="filter-grid-input-label" for="filter-grid-fixed">Фиксированная</label>
+                  <input class="visually-hidden filter-grid-input" type="radio" name="grid" value="fixed" id="filter-grid-fixed">
+                  <label class="filter-grid-label" for="filter-grid-fixed">Фиксированная</label>
                 </li>
                 <li class="filter-option filter-grid">
-                  <input class="visually-hidden filter-grid-input" type="radio" name="grid" value="rubber-grid" id="filter-grid-rubber">
-                  <label class="filter-grid-input-label" for="filter-grid-rubber">Резиновая</label>
+                  <input class="visually-hidden filter-grid-input" type="radio" name="grid" value="rubber" id="filter-grid-rubber">
+                  <label class="filter-grid-label" for="filter-grid-rubber">Резиновая</label>
                 </li>
               </ul>
-
-
             </fieldset>
 
-            <!-- Другие элементы формы -->
+            <fieldset class="filter-item">
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option filter-features">
+                  <input class="visually-hidden filter-features-input" type="checkbox" name="features" id="slider" checked>
+                  <label for="slider">Слайдер</label>
+                </li>
+                <li class="filter-option filter-features">
+                  <input class="visually-hidden filter-features-input" type="checkbox" name="features" id="advantages">
+                  <label for="advantages">Преимущества</label>
+                </li>
+                <li class="filter-option filter-features">
+                  <input class="visually-hidden filter-features-input" type="checkbox" name="features" id="news" checked>
+                  <label for="news">Новости</label>
+                </li>
+                <li class="filter-option filter-features">
+                  <input class="visually-hidden filter-features-input" type="checkbox" name="features" id="gallery">
+                  <label for="gallery">Галерея</label>
+                </li>
+                <li class="filter-option filter-features">
+                  <input class="visually-hidden filter-features-input" type="checkbox" name="features" id="cart">
+                  <label for="cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+
           </form>
 
         </section>
