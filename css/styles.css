@@ -1109,7 +1109,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
-.modal-form input {
+.modal-form-input {
   height: 50px;
   line-height: 18px;
   color: #444444;
@@ -1119,13 +1119,20 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
 }
 
-.modal-form input:hover {
+.modal-form-input:hover {
   border: 2px solid #B4B9BB;
 }
 
-.modal-form input:focus {
+.modal-form-input:focus {
   opacity: 1;
   border: 2px solid var(--basic-black);
+}
+
+.modal-form-input-invalid {
+  color: var(--special-red-invalid);
+  border: 2px solid var(--special-red-invalid);
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .modal-close {
@@ -1191,4 +1198,5 @@ input[type="radio"].visually-hidden {
   grid-column: 1 / 2;
   width: 259px;
   border: 0;
+  cursor: pointer;
 }
