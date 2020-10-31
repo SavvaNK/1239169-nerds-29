@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="page-body">
-    
+
     <div class="main-header-wrap">
       <header class="main-header">
         <h1 class="main-title visually-hidden">Веб-дизайн студия «Нёрдс»</h1>
@@ -195,8 +195,20 @@
           </ul>
         </div>
       </section>
-
     </footer>
+
+    <section class="modal">
+      <h2 class="modal-title">Напишите нам</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="modal-label-name" for="name">Ваше имя</label>
+        <input class="modal-input-name" type="text" id="name" placeholder="Имя Фамилия">
+        <label class="modal-label-email" for="email">Ваш email:</label>
+        <input class="modal-input-email" id="email" type="email" name="email" placeholder="email@example.com">
+        <label class="modal-label-text" for="text"></label>
+        <input class="modal-input-text" id="text" type="text" name="text" placeholder="В свободной форме">
+        <button class="modal-btn btn btn-red" type="submit">Отправить</button>
+      </form>
+    </section>
 
     <script src="js/script.js"></script>
 

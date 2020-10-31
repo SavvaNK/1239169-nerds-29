@@ -82,12 +82,12 @@
 .page-body {
   margin: 0;
   padding: 0;
-  width: 1160px;
+  /*width: 1160px;*/
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   line-height: 24px;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -298,7 +298,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 8px;
-  left: 0px;
+  /*left: 0px;*/
   width: 15px;
   height: 15px;
   background-image: url(../img/cart-icon.svg);
@@ -325,7 +325,7 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
   width: 1160px;
-  height: 431;
+  height: 431px;
   padding: 0 20px;
   background-color: var(--basic-grey);
   justify-self: center;
@@ -695,7 +695,7 @@ input[type="radio"].visually-hidden {
 
   /* Для демонстрации */
   width: 260px;
-  margin: 50px auto; 
+  margin: 50px auto;
 }
 
 .range-filter {
