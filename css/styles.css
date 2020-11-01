@@ -1113,11 +1113,11 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-form input {
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 
 .modal-form-input {
-  height: 50px;
+  min-height: 50px;
   line-height: 18px;
   color: #444444;
   opacity: 0.5;
@@ -1208,5 +1208,5 @@ input[type="radio"].visually-hidden {
   width: 259px;
   border: 0;
   cursor: pointer;
-  margin-top: 13px;
+  margin-top: 48px;
 }
