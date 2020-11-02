@@ -107,11 +107,6 @@
   height: auto;
 }
 
-.page ul {
-  list-style: none;
-  padding-inline-start: 00px; /*????*/
-}
-
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -210,6 +205,27 @@ input[type="radio"].visually-hidden {
 
 .background-color-yellow {
   background-color: var(--basic-yellow);
+}
+
+/*list-style: none, for uls*/
+
+/*.page ul,*/
+.site-navigation,
+.cart,
+.slider-list,
+.products-list,
+/*.about-offers-list,*/
+.about-terms,
+.clients-list,
+.social-list,
+.filter-grid-list,
+.filter-features-list,
+.sort-list,
+.sort-orders,
+.templates-list,
+.templates-pagination-list {
+  list-style: none;
+  padding-inline-start: 00px; /*????*/
 }
 
 /* Header */
