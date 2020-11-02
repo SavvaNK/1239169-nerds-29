@@ -298,7 +298,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 8px;
-  /*left: 0px;*/
+  left: 0px;
   width: 15px;
   height: 15px;
   background-image: url(../img/cart-icon.svg);
@@ -343,12 +343,14 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item-title {
+  margin: 0;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
 .slider-item-text {
+
   color: var(--basic-black-lighter);
 }
 
@@ -365,7 +367,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: 100px;
   left: 600px;
-  z-index: 20;
+  /*z-index: 1;*/
   display: flex;
   width: 88px;
   justify-content: space-between;
@@ -1082,6 +1084,7 @@ input[type="radio"].visually-hidden {
 /*Modal*/
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
