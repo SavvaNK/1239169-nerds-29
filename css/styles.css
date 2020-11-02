@@ -107,6 +107,10 @@
   height: auto;
 }
 
+.page *:focus {
+  outline: none;
+}
+
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -234,8 +238,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   background-color: var(--basic-grey);
   display: grid;
-  /* outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px; */
 }
 
 .main-header {
@@ -247,8 +249,6 @@ input[type="radio"].visually-hidden {
   display: grid;
   justify-self: center;
   width: 1160px;
-  /* outline: 5px solid rgba(0, 255, 34, 0.7);
-  outline-offset: -5px; */
 }
 
 /* Header Navigation */
@@ -258,8 +258,6 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   grid-template-columns: 160px 1fr auto;
   align-items: end;
-  /* outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px; */
 }
 
 .site-navigation {
@@ -268,8 +266,6 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   justify-self: center;
   justify-content: space-between;
-  /* outline: 5px solid rgba(217, 255, 0, 0.7);
-  outline-offset: -5px; */
 }
 
 .site-navigation-item,
@@ -327,8 +323,6 @@ input[type="radio"].visually-hidden {
 .container {
   width: 100%;
   display: grid;
-  /* outline: 5px solid rgba(255, 0, 212, 0.7);
-  outline-offset: -5px; */
 }
 
 .slider-wrap {
@@ -345,8 +339,6 @@ input[type="radio"].visually-hidden {
   padding: 0 20px;
   background-color: var(--basic-grey);
   justify-self: center;
-  /* outline: 5px solid rgba(30, 255, 0, 0.7);
-  outline-offset: -5px; */
 }
 
 .slider-item {
@@ -354,8 +346,6 @@ input[type="radio"].visually-hidden {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr 1fr 1fr;
-  /* outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px; */
 }
 
 .slider-item-title {
@@ -414,14 +404,18 @@ input[type="radio"].visually-hidden {
   background-position: 50% 50%;
 }
 
+.slider-controls-button:hover,
+.slider-controls-button:focus {
+  box-sizing: border-box;
+  border: 2px solid var(--basic-black-lighter);
+}
+
 /* Main Products */
 .products {
   justify-self: center;
   width: 1160px;
   padding-left: 20px;
   padding-right: 20px;
-  /* outline: 5px solid rgba(30, 255, 0, 0.7);
-  outline-offset: -5px; */
   border-bottom: 2px solid var(--basic-grey);
 }
 
@@ -430,13 +424,6 @@ input[type="radio"].visually-hidden {
   grid-template-columns: auto auto auto;
   gap: 70px;
   justify-items: left;
-  /* outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px; */
-}
-
-.products-list-item {
-  /* outline: 5px solid rgba(4, 0, 255, 0.7);
-  outline-offset: -5px; */
 }
 
 .products-list-item-title {
@@ -511,7 +498,7 @@ input[type="radio"].visually-hidden {
   grid-template-columns: auto auto auto;
 }
 
-.about-terms-item-repcent {
+.about-terms-item-percent {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
@@ -559,6 +546,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.2;
 }
 
+.clients-item-link:focus .clients-list-item-logo,
 .clients-list-item-logo:hover,
 .clients-list-item-logo:focus {
   opacity: 1;
