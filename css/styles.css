@@ -119,7 +119,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-white);
-  min-height: 50px;
+  /*min-height: 50px;*/
   border-radius: 3px;
 }
 
@@ -378,23 +378,24 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  margin: 78px 0 10px;
+  margin: 78px 0 0 0;
   width: 45%;
 }
 
 .slider-item-text {
   padding: 0;
   color: var(--basic-black-lighter);
-  margin: 18px 0 10px;
+  margin: 26px 0 0 0;
   width: 32%;
 }
 
 .slider-item-button {
-  padding: 0;
+  padding: 17px 55px 15px 54px;
   /*min-width: 240px;*/
-  line-height: 50px;
-  margin: 27px 0 10px;
-  width: 20.7%;
+  /*line-height: 50px;*/
+  margin: 39px 0 0 0;
+  /*width: 20.7%;*/
+  align-self: flex-start;
 }
 
 .slider-item-img {
@@ -410,8 +411,9 @@ input[type="radio"].visually-hidden {
   bottom: 96px;
   left: 556px;
   display: flex;
-  width: 88px;
+  min-width: 88px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .slider-controls-button {
@@ -451,19 +453,44 @@ input[type="radio"].visually-hidden {
 .products {
   justify-self: center;
   width: 1160px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-bottom: 2px solid var(--basic-grey);
+  /*border-bottom: 2px solid var(--basic-grey);*/
+  padding: 80px 20px;
+  position: relative;
+}
+
+.products:after {
+  content: '';
+  width: 96.5%;
+  height: 2px;
+  background: var(--basic-grey);
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .products-list {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 70px;
-  justify-items: left;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.products-list-item {
+  margin: 0 100px 0 0;
+  padding: 0;
+  max-width: 300px;
+  min-height: 293px;
+}
+
+.products-list-item:nth-child(3) {
+  margin: 0;
 }
 
 .products-list-item-title {
+  margin: 18px 0 0 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -473,10 +500,15 @@ input[type="radio"].visually-hidden {
 
 .products-list-item-text {
   color: var(--basic-black-lighter);
+  margin: 16px 0 0 0;
+  max-width: 300px;
+  width: 85%;
 }
 
 .products-list-item-button {
-  width: 160px;
+  max-width: 300px;
+  margin: 32px 0 0 0;
+  padding: 17px 39px 15px 40px;
 }
 
 .products-list-item-img {
@@ -657,7 +689,7 @@ input[type="radio"].visually-hidden {
 .social-list-item-link {
   background-position: center;
   background-repeat: no-repeat;
-  display: inline-block;
+  /*display: inline-block;*/
   width: 81px;
   height: 81px;
   border-radius: 50%;
