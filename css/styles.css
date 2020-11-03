@@ -218,7 +218,7 @@ input[type="radio"].visually-hidden {
 .cart,
 .slider-list,
 .products-list,
-/*.about-offers-list,*/
+.about-offers-list,
 .about-terms,
 .clients-list,
 .social-list,
@@ -496,6 +496,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
+  max-width: 300px;
 }
 
 .products-list-item-text {
@@ -522,60 +523,108 @@ input[type="radio"].visually-hidden {
   justify-self: center;
   width: 1160px;
   grid-template-columns: 1fr 360px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-bottom: 2px solid var(--basic-grey);
+  /*padding-left: 20px;*/
+  /*padding-right: 20px;*/
+  padding: 41px 20px 49px 20px;
+  /*border-bottom: 2px solid var(--basic-grey);*/
+  position: relative;
+}
+
+.about:after {
+  content: '';
+  width: 96.5%;
+  height: 2px;
+  background: var(--basic-grey);
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .about-slogan {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  margin: 34px 0 0 0;
+  width: 86%;
 }
 
 .about-credo {
   color: var(--basic-black-lighter);
+  margin: 33px 0 0 0;
+  width: 86%;
 }
 
 .about-offers-title {
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--basic-black-lighter);
+  margin: 41px 0 0 0;
+  width: 86%;
 }
 
 .about-offers-list {
   position: relative;
+  margin: 23px 0 0 0;
+  padding: 0 0 0 36px;
 }
 
 .about-offers-list-item {
   color: var(--basic-black-lighter);
-  list-style-image: url(../img/red-list-marker.svg);
-  padding-inline-start: 30px;
+  /*list-style-image: url(../img/red-list-marker.svg);*/
+  margin: 0 0 24px 0;
+  padding: 0 0 0 0;
+  position: relative;
 }
 
-.about-offers-list-item::marker {
-  margin-left: -30px;
+.about-offers-list-item:before {
+  content: "";
+  background-color: var(--basic-red);
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  left: -36px;
+  top: 11px;
 }
+
+/*.about-offers-list-item::marker {*/
+/*  position: absolute;*/
+/*  !*top: 10px;*!*/
+/*  padding: 0 20px 0 0;*/
+/*  !*margin: 0 0 0 -32px;*!*/
+/*}*/
 
 .about-tradition {
   font-weight: 700;
   text-transform: uppercase;
+  margin: 30px 0 0 16px;
+  padding: 0 0 0 0;
 }
 
 .about-terms {
   display: grid;
   grid-template-columns: auto auto auto;
+  column-gap: 6px;
 }
 
 .about-terms-item-percent {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
+  margin: 14px 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.about-terms-item-percent sup{
+  font-size: 28px;
 }
 
 .about-terms-item-text {
   line-height: 18px;
   color: var(--basic-black-lighter);
+  margin: 12px 0 0 0;
+  padding: 0 0 0 0;
 }
 
 /* Main Clients */
