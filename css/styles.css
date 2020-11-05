@@ -1366,6 +1366,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin: 25px 0 0 10px;
+  padding: 0;
 }
 
 .templates-pagination-item {
@@ -1377,7 +1379,11 @@ input[type="radio"].visually-hidden {
 }
 
 .templates-pagination-item-btn {
-  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .templates-pagination-item-btn-cur {
@@ -1388,6 +1394,10 @@ input[type="radio"].visually-hidden {
 
 .templates-pagination-item-btn-next {
   width: 260px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* catalog.html Map */
