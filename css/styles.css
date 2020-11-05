@@ -1301,7 +1301,7 @@ input[type="radio"].visually-hidden {
 
 .templates-item:hover .templates-item-container,
 .templates-item:focus .templates-item-container {
-  display: flex;
+  display: block;
 }
 
 .templates-item:hover,
@@ -1313,9 +1313,9 @@ input[type="radio"].visually-hidden {
 .templates-item-container {
   display: none;
   position: absolute;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  /*flex-direction: column;*/
+  /*justify-content: flex-start;*/
+  /*align-items: center;*/
   left: 0px;
   bottom: 0px;
   height: 231px;
@@ -1323,6 +1323,7 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-grey);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  text-align: center;
 }
 
 .templates-item-title {
@@ -1330,25 +1331,33 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 28px 0 0 0;
 }
 
 .templates-item-title:hover,
 .templates-item-title:focus {
   color: var(--basic-red);
+  cursor: pointer;
 }
 
 .templates-item-title:active {
   color: var(--special-black-press);
-
 }
 
 .templates-item-desc {
   line-height: 18px;
   color: var(--basic-gray-dark);
+  margin: 12px 3px 0 0;
+  padding: 0 17% 0 17%;
+  /*width: 60%;*/
+  /*align-content: stretch;*/
+
 }
 
 .templates-item-button {
-  width: 200px;
+  /*width: 200px;*/
+  margin: 33px 0 0 0;
+  padding: 17px 72px 15px 72px;
 }
 
 .templates-pagination-list {
