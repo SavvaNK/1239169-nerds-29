@@ -922,8 +922,13 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   display: grid;
   justify-self: center;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 390px 1fr;
   grid-template-rows: 1fr 416px;
+}
+
+.catalog-main-container-left {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-main-container-right {
@@ -933,14 +938,21 @@ input[type="radio"].visually-hidden {
 }
 
 /* catalog.html Filter */
+.filter {
+  margin: 0;
+  padding: 0;
+}
+
+.filter form {
+  margin: 0;
+  padding: 55px 0 0 0;
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
   border: none;
 
-  /* Для демонстрации */
-  width: 260px;
-  margin: 50px auto;
 }
 
 .range-filter {
@@ -958,7 +970,7 @@ input[type="radio"].visually-hidden {
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1010,8 +1022,8 @@ input[type="radio"].visually-hidden {
 
 .price-controls input {
   width: 60px;
-  padding: 10px;
-  margin-left: 10px;
+  padding: 10px 4px 9px 16px;
+  margin-left: 8px;
   text-align: center;
   color: var(--basic-black-lighter);
   border: none;
@@ -1021,8 +1033,27 @@ input[type="radio"].visually-hidden {
   font-size: inherit;
 }
 
+.fieldset-filter-grid {
+  margin: 54px 0 0 0;
+}
+
+.filter-grid-list {
+  margin: 14px 0 0 36px;
+  padding: 0 0 0 0;
+}
+
+.filter-grid-list li {
+  margin:  0 0 16px 0;
+  padding: 0 0 0 0;
+}
+
 .filter-option {
   position: relative;
+}
+
+.filter-grid-label {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .filter-grid-input + label,
@@ -1046,7 +1077,7 @@ input[type="radio"].visually-hidden {
 .filter-grid-input + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -36px;
   top: -1px;
   /* если очень захочется рисовать в css а не вставлять svg */
   /* width: 19px;
@@ -1065,7 +1096,7 @@ input[type="radio"].visually-hidden {
 .filter-grid-input:checked + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -36px;
   top: -1px;
   width: 25px;
   height: 25px;
