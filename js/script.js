@@ -1,3 +1,6 @@
+// slider
+
+
 // const [btn1, btn2, btn3] = document.querySelectorAll('.slider-controls-button');
 
 // const [slide1, slide2, slide3] = document.querySelectorAll('.slider-item');
@@ -30,7 +33,6 @@
 //   slide3.classList.remove('visually-hidden');
 // });
 
-
 const btnList = document.querySelectorAll('.slider-controls-button');
 
 const slideList = document.querySelectorAll('.slider-item');
@@ -50,3 +52,19 @@ for (let i = 0; i < btnList.length; i += 1) {
   }
   )
 }
+
+// modal
+
+const modalOpenBtn= document.querySelector(".map-contacts-button");
+const modal = document.querySelector(".modal");
+const modalClose = document.querySelector(".modal-close")
+
+modalOpenBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modal.classList.add("modal-show");
+});
+
+modalClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modal.classList.remove("modal-show");
+});
