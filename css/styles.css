@@ -886,6 +886,17 @@ input[type="radio"].visually-hidden {
 }
 
 /* catalog.html */
+
+.catalog-header-logo {
+  display: flex;
+}
+
+.catalog-header-logo-img {
+  margin: 0;
+  padding: 0 0 0 0;
+  justify-self: flex-end;
+}
+
 .catalog-header-logo-img,
 .catalog-header-logo-img:hover,
 .catalog-header-logo-img:focus {
@@ -903,6 +914,8 @@ input[type="radio"].visually-hidden {
   font-size: 55px;
   line-height: 55px;
   text-transform: none;
+  margin: 0 auto;
+  padding: 78px 0 108px 0;
 }
 
 .catalog-main-container {

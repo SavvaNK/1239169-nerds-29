@@ -55,6 +55,7 @@ for (let i = 0; i < btnList.length; i += 1) {
 
 // modal
 
+
 const modalOpenBtn= document.querySelector(".map-contacts-button");
 const modal = document.querySelector(".modal");
 const modalClose = document.querySelector(".modal-close")
