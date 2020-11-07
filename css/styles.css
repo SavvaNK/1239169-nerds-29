@@ -232,7 +232,7 @@ input[type="radio"].visually-hidden {
 .templates-list,
 .templates-pagination-list {
   list-style: none;
-  padding-inline-start: 00px;
+  /*padding-inline-start: 00px;*/
 }
 
 /* Header */
@@ -1294,13 +1294,17 @@ input[type="radio"].visually-hidden {
   margin: 28px 0 0 0;
 }
 
-.templates-item-title:hover,
-.templates-item-title:focus {
+.templates-item-title-link {
+  color: var(--basic-black);
+}
+
+.templates-item-title-link:hover,
+.templates-item-title-link:focus {
   color: var(--basic-red);
   cursor: pointer;
 }
 
-.templates-item-title:active {
+.templates-item-title-link:active {
   color: var(--special-black-press);
 }
 
