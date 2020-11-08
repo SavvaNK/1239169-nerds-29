@@ -20,19 +20,17 @@ for (let i = 0; i < btnList.length; i += 1) {
 
 // modal
 
-const modalOpenBtn= document.querySelector(".map-contacts-button");
+const modalOpenBtn = document.querySelector(".map-contacts-button");
+const modalCloseBtn = document.querySelector(".modal-close");
 const modal = document.querySelector(".modal");
-const modalCloseBtn = document.querySelector(".modal-close")
 const name = modal.querySelector("[name=name]");
 const email = modal.querySelector("[name=email]");
 
-const openModal = function (evt) {
+modalOpenBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.add("modal-show");
   name.focus();
-};
-
-modalOpenBtn.addEventListener("click", openModal);
+});
 
 modalCloseBtn.addEventListener("click", function (evt) {
   evt.preventDefault();

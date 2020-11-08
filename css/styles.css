@@ -228,7 +228,6 @@ input[type="radio"].visually-hidden {
 .templates-list,
 .templates-pagination-list {
   list-style: none;
-  /*padding-inline-start: 00px;*/
 }
 
 /* Header */
@@ -264,18 +263,26 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   justify-self: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 8px;
+  align-items: flex-end;
+  padding: 0;
+  margin-left: 0;
 }
 
 .cart {
   display: flex;
   flex-direction: row;
   justify-self: flex-end;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 8px;
+}
+
+.site-navigation-item:not(:first-child):not(:nth-child(7)) {
+  margin: 0 0 0 45px;
+  padding: 0;
 }
 
 .site-navigation-item,
@@ -590,6 +597,7 @@ input[type="radio"].visually-hidden {
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 6px;
+  padding: 0;
 }
 
 .about-terms-item-percent {
