@@ -1392,8 +1392,20 @@ input[type="radio"].visually-hidden {
   padding: 63px 100px 137px;
 }
 
-.modal-show {
+.modal-show{
   display: block;
+  animation-name: from-left;
+  animation-duration: 0.6s;
+}
+
+.modal-close-animation {
+  animation-name: to-left;
+  animation-duration: 0.6s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .modal-title {
@@ -1440,6 +1452,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid var(--special-red-invalid);
   box-sizing: border-box;
   border-radius: 3px;
+  opacity: 1;
 }
 
 .modal-close {
@@ -1510,4 +1523,47 @@ input[type="radio"].visually-hidden {
   margin: 48px 0 0 0;
   padding: 17px 83px 15px 85px;
   justify-self: left;
+}
+
+@keyframes from-left {
+  0%   { transform: translateX(-2000px); }
+  70%  { transform: translateX(30px);    }
+  90%  { transform: translateX(-10px);   }
+  100% { transform: translateX(0);       }
+}
+
+@keyframes to-right {
+  0%   { transform: translateX(0);       }
+  10%  { transform: translateX(10px);    }
+  30%  { transform: translateX(-30px);   }
+  100% { transform: translateX(2000px);  }
+}
+
+@keyframes to-left {
+  0%   { transform: translateX(0);       }
+  10%  { transform: translateX(-10px);   }
+  30%  { transform: translateX(30px);    }
+  100% { transform: translateX(-2000px); }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

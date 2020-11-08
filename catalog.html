@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page-body">
 
@@ -218,7 +218,7 @@
           </div>
           <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="маркер на карту с нашим адресом">
         </div>
-        <iframe class="map-google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056793!2d30.320853351782613!3d59.93871916896509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604512499374!5m2!1sru!2sru" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onload="hideMarker()"></iframe>
+        <iframe class="map-google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253056793!2d30.320853351782613!3d59.93871916896509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604512499374!5m2!1sru!2sru" width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onload="hideMarker()"></iframe>
       </section>
 
     </main>
@@ -255,9 +255,9 @@
       <h2 class="modal-title">Напишите нам</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="modal-label-name" for="name">Ваше имя:</label>
-        <input class="modal-form-input modal-input-name" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+        <input class="modal-form-input modal-input-name" type="text" name="name" id="name" placeholder="Имя Фамилия">
         <label class="modal-label-email" for="email">Ваш email:</label>
-        <input class="modal-form-input modal-input-email" id="email" type="email" name="email" placeholder="email@example.com" required>
+        <input class="modal-form-input modal-input-email" id="email" type="email" name="email" placeholder="email@example.com">
         <label class="modal-label-text" for="text">Текст письма:</label>
         <textarea class="modal-form-input modal-input-text" id="text" name="text" placeholder="В свободной форме" rows="5"></textarea>
         <button class="modal-btn btn btn-red" type="submit">Отправить</button>
@@ -269,6 +269,6 @@
       </button>
     </section>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
