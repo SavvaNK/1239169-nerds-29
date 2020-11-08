@@ -1,7 +1,6 @@
 // slider
 
 const btnList = document.querySelectorAll('.slider-controls-button');
-
 const slideList = document.querySelectorAll('.slider-item');
 
 for (let i = 0; i < btnList.length; i += 1) {
@@ -16,22 +15,42 @@ for (let i = 0; i < btnList.length; i += 1) {
         slideList[j].classList.add('visually-hidden');
       }
     }
-  }
-  )
+  })
 }
 
 // modal
 
 const modalOpenBtn= document.querySelector(".map-contacts-button");
 const modal = document.querySelector(".modal");
-const modalClose = document.querySelector(".modal-close")
+const modalCloseBtn = document.querySelector(".modal-close")
+const name = modal.querySelector("[name=name]");
+const email = modal.querySelector("[name=email]");
 
-modalOpenBtn.addEventListener("click", function (evt) {
+const openModal = function (evt) {
   evt.preventDefault();
   modal.classList.add("modal-show");
-});
+  name.focus();
+};
 
-modalClose.addEventListener("click", function (evt) {
+modalOpenBtn.addEventListener("click", openModal);
+
+modalCloseBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.remove("modal-show");
 });
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.key === "Escape") {
+    if (modal.classList.contains("modal-show")) {
+      evt.preventDefault();
+      modal.classList.remove("modal-show");
+      // modal.classList.remove("modal-error");
+    }
+  }
+});
+
+// map
+
+const hideMarker = () => {
+  document.querySelector('.map-marker').style.display = 'none';
+};

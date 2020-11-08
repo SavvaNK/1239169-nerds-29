@@ -111,10 +111,6 @@
   height: auto;
 }
 
-.page *:focus {
-  outline: none;
-}
-
 .btn {
   display: inline-block;
   vertical-align: middle;
@@ -710,6 +706,7 @@ input[type="radio"].visually-hidden {
 
 .map-google-map {
   margin: 0 auto;
+  width: 100%;
 }
 
 .map-cont-container {
@@ -1263,8 +1260,9 @@ input[type="radio"].visually-hidden {
 }
 
 .templates-item:hover .templates-item-container,
-.templates-item:focus .templates-item-container {
-  display: block;
+.templates-item:focus .templates-item-container,
+.templates-item:focus-within .templates-item-container {
+  z-index: 0;
 }
 
 .templates-item:hover,
@@ -1274,7 +1272,8 @@ input[type="radio"].visually-hidden {
 }
 
 .templates-item-container {
-  display: none;
+  display: block;
+  z-index: -1;
   position: absolute;
   left: 0px;
   bottom: 0px;
