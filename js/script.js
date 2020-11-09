@@ -93,9 +93,10 @@ const isFormValid = () => (
 form.addEventListener("submit", function (evt) {
   if (!isFormValid()) {
     evt.preventDefault();
-    modal.classList.remove("modal-error");
-    // modal.offsetWidth = modal.offsetWidth;
     modal.classList.add("modal-error");
+    setTimeout( function () {
+      modal.classList.remove("modal-error");
+    }, 500)
   }
 });
 
