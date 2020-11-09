@@ -83,23 +83,6 @@ email.onfocus = removeInvalidClass;
 text.onblur = containsEmptyValue;
 text.onfocus = removeInvalidClass;
 
-// silliest form validation, but whatever, I just want to shake modal XD
-const isFormValid = () => (
-    name.value
-    && email.value.includes("@")
-    && text.value
-);
-
-form.addEventListener("submit", function (evt) {
-  if (!isFormValid()) {
-    evt.preventDefault();
-    modal.classList.add("modal-error");
-    setTimeout( function () {
-      modal.classList.remove("modal-error");
-    }, 500)
-  }
-});
-
 // map
 
 const hideMarker = () => {
